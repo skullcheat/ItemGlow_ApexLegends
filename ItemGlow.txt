@@ -1,0 +1,9 @@
+if (MenuSettings::itemwall) {
+			for (int i = 0; i < 12000; i++) {
+				DWORD64 Entity = GetEntityById(i);
+				if (Entity == 0)
+					continue;
+
+				Drv.write<int>(Entity + 0x2C0, 1363184265);
+			}
+		}
